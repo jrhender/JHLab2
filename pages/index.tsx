@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../components/Header'
+import Header from '../components/header/Header'
 import PostsList from '../components/PostsList'
 
 function HomePage() {
