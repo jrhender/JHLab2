@@ -14,7 +14,7 @@ function HomePage() {
         />
       </Head>
       <Header/>
-        <h2>Recent Posts</h2>
+        <h2>Recent Blog Posts</h2>
       <PostsList/>
     </>
   )

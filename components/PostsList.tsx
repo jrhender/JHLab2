@@ -33,6 +33,7 @@ function PostsList() {
               date={p.fields.date}
               key={p.fields.title}
               image={p.fields.image}
+              imageAttribution={p.fields.imageAttribution}
               title={p.fields.title}
               url={p.fields.url}
             />

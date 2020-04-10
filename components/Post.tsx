@@ -1,8 +1,8 @@
-function Post({ alt, date, image, title, url }) {
+function Post({ alt, date, image, imageAttribution, title, url }) {
     return (
       <div className="container">
         <a href={url}>
-          <img alt={alt} src={image} />
+          <img title={imageAttribution} alt={alt} src={image} />
         </a>
         <div className="text">
           <h2>{title}</h2>
