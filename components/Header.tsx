@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Flask from './Flask';
 
 const linkStyle = {
   marginRight: 15
@@ -6,6 +7,7 @@ const linkStyle = {
 
 const Header = () => (
   <div>
+    <Flask/>
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
