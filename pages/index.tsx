@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Post from '../components/post'
+import contentful from 'contentful'
 
-const contentful = require('contentful')
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
@@ -12,7 +12,7 @@ function HomePage() {
   async function fetchEntries() {
     const entries = await client.getEntries()
     if (entries.items) return entries.items
-    console.log(`Error getting Entries for ${contentType.name}.`)
+    console.log(`Error getting Entries for.`)
   }
 
   const [posts, setPosts] = useState([])
