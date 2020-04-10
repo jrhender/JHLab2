@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 function Post({ alt, date, image, imageAttribution, title, url }) {
-    return (
+  return (
+    <Link href="/blog/[pid]" as={`/blog/${title}`}>
+    <a>
       <div className="container">
         <div>
-          <a href={url}>
-            <img title={imageAttribution} alt={alt} src={image} />
-          </a>
+          <img title={imageAttribution} alt={alt} src={image} />
         </div>
         <div className="text">
           <h2>{title}</h2>
@@ -42,7 +44,9 @@ function Post({ alt, date, image, imageAttribution, title, url }) {
           }
         `}</style>
       </div>
-    )
-  }
-  
-  export default Post
+    </a>
+    </Link>
+  )
+}
+
+export default Post
