@@ -8,7 +8,7 @@ function Post({ alt, date, image, title, url }) {
           <h2>{title}</h2>
           <h4>{date}</h4>
         </div>
-        <style jsx>{`
+        {/* <style jsx>{`
           .container {
             cursor: pointer;
             height: 453px;
@@ -36,7 +36,7 @@ function Post({ alt, date, image, title, url }) {
             font-weight: 500;
             margin-top: 8px;
           }
-        `}</style>
+        `}</style> */}
       </div>
     )
   }

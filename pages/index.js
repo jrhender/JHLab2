@@ -35,6 +35,7 @@ function HomePage() {
           type="text/css"
         />
       </Head>
+      <p>Test</p>
       {posts.length > 0
         ? posts.map(p => (
             <Post
