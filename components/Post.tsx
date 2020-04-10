@@ -1,17 +1,20 @@
 function Post({ alt, date, image, imageAttribution, title, url }) {
     return (
       <div className="container">
-        <a href={url}>
-          <img title={imageAttribution} alt={alt} src={image} />
-        </a>
+        <div>
+          <a href={url}>
+            <img title={imageAttribution} alt={alt} src={image} />
+          </a>
+        </div>
         <div className="text">
           <h2>{title}</h2>
           <h4>{date}</h4>
         </div>
         <style jsx>{`
           .container {
-            cursor: pointer;
-            height: 453px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 200px;
             margin-bottom: 48px;
           }
           a {
@@ -21,9 +24,7 @@ function Post({ alt, date, image, imageAttribution, title, url }) {
             border-bottom: none;
           }
           .text {
-            margin-top: -60px;
-            padding: 24px;
-            position: absolute;
+            padding: 5px;
           }
           h2 {
             color: black;
@@ -37,7 +38,6 @@ function Post({ alt, date, image, imageAttribution, title, url }) {
             margin-top: 8px;
           }
           img {
-            height: 50%;
             width: auto;
           }
         `}</style>
