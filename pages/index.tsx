@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <>
       <Head>
-        <title>Next.js + Contentful</title>
+        <title>JH Lab</title>
         <link
           rel="stylesheet"
           href="https://css.zeit.sh/v1.css"
