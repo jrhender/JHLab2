@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function Post({ alt, date, image, imageAttribution, title, url }) {
+function PostPreview({ alt, date, image, imageAttribution, title, url }) {
   return (
     <Link href="/blog/[pid]" as={`/blog/${title}`}>
     <a>
@@ -49,4 +49,4 @@ function Post({ alt, date, image, imageAttribution, title, url }) {
   )
 }
 
-export default Post
+export default PostPreview

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Post from './Post'
+import PostPreview from './PostPreview'
 
 const contentful = require('contentful')
 const client = contentful.createClient({
@@ -28,7 +28,7 @@ function PostsList() {
     <>
       {posts.length > 0
         ? posts.map(p => (
-            <Post
+            <PostPreview
               alt={p.fields.alt}
               date={p.fields.date}
               key={p.fields.title}
