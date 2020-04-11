@@ -20,10 +20,22 @@ const Post = (props) => {
     getPosts()
   }, [])
 
+  let postMarkup
+  if (post == undefined) {
+    postMarkup = <p>not loaded</p>
+  }
+  else {
+    postMarkup =
+      <>
+        <p>{post.fields.date}</p>
+        <div>{documentToReactComponents(post.fields.body)}</div>
+      </>
+  }
+
   return (
     <div style={layoutStyle}>
-      <h2>{props.title}</h2>
-      <p>{post == undefined ? "not loaded" : documentToReactComponents(post.fields.body)}</p>
+      <h1>{props.title}</h1>
+      {postMarkup}
     </div>
   )
 }
