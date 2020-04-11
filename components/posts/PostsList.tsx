@@ -1,19 +1,8 @@
 import { useEffect, useState } from 'react'
 import PostPreview from './PostPreview'
-
-const contentful = require('contentful')
-const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-})
+import { fetchEntries } from './postsAPI'
 
 function PostsList() {
-  async function fetchEntries() {
-    const entries = await client.getEntries()
-    if (entries.items) return entries.items
-    console.log(`Error getting Entries.`)
-  }
-
   const [posts, setPosts] = useState([])
 
   useEffect(() => {

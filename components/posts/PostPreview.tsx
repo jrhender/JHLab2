@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function PostPreview({ alt, date, image, imageAttribution, title, url }) {
   return (
-    <Link href="/blog/[pid]" as={`/blog/${title}`}>
+    <Link href="/blog/[title]" as={`/blog/${title}`}>
     <a>
       <div className="container">
         <div>
