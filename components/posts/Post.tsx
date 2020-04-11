@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { fetchEntryByTitle } from './postsAPI'
 import { Entry } from 'contentful'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 const layoutStyle = {
   margin: 20,
@@ -22,7 +23,7 @@ const Post = (props) => {
   return (
     <div style={layoutStyle}>
       <h2>{props.title}</h2>
-      <p>{post == undefined ? "not loaded" : post.fields.alt}</p>
+      <p>{post == undefined ? "not loaded" : documentToReactComponents(post.fields.body)}</p>
     </div>
   )
 }
