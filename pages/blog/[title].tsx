@@ -35,4 +35,8 @@ const BlogPage = () => {
   )
 }
 
+BlogPage.getInitialProps = ({query}) => ({
+  key: query.title
+})
+
 export default BlogPage
