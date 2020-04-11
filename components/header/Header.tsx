@@ -5,24 +5,28 @@ import styles from './Header.module.css'
 const Header = () => (
   <div className={styles.AppHeader}>
     <div id="LogoAndName">
-        {/* <img src={jhFace} alt="logo" /> */}
-        <h1>JH Code Lab</h1>
-        <Flask/>
+      {/* <img src={jhFace} alt="logo" /> */}
+      <Link href="/">
+        <div>
+          <h1>JH Code Lab</h1>
+          <Flask />
+        </div>
+      </Link>
     </div>
-    <nav className={styles.siteNavigation}>
-        <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
-            </li>
-        </ul>
-    </nav>
+    {/* <nav className={styles.siteNavigation}>
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
+      </ul>
+    </nav> */}
   </div>
 );
 
