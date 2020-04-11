@@ -2,6 +2,12 @@ import { useEffect, useState } from 'react'
 import PostPreview from './PostPreview'
 import { fetchEntries } from './postsAPI'
 
+const layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: '1px solid #DDD'
+};
+
 function PostsList() {
   const [posts, setPosts] = useState([])
 
@@ -14,7 +20,8 @@ function PostsList() {
   }, [])
 
   return (
-    <>
+    <div style={layoutStyle}>
+      <h2>Recent Blog Posts</h2>
       {posts.length > 0
         ? posts.map(p => (
             <PostPreview
@@ -28,7 +35,7 @@ function PostsList() {
             />
           ))
         : null}
-    </>
+    </div>
   )
 }
 
