@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Flask from '../Flask';
+import Flask from '../flask/Flask';
 import styles from './Header.module.css'
 
 const Header = () => (
