@@ -11,6 +11,12 @@ const Layout = props => (
       </Head>
     <Header />
     {props.children}
+    <style jsx global>{`
+      body {
+        margin: 0;
+      }
+    `}
+    </style>
   </div>
 );
 
