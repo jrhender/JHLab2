@@ -31,7 +31,6 @@ function PostsList() {
             <PostPreview
               alt={p.fields.alt}
               lastUpdatedDate={p.sys.updatedAt}
-              date={p.fields.date}
               key={p.fields.title}
               image={p.fields.image}
               imageAttribution={p.fields.imageAttribution}
