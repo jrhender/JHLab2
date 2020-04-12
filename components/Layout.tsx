@@ -3,16 +3,19 @@ import Header from './header/Header';
 import Footer from './footer/Footer';
 
 const layoutStyle = {
+  margin: 20,
 };
 
 const Layout = props => (
-  <div style={layoutStyle}>
-      <Head>
-        <title>JH Lab</title>
-      </Head>
+  <div>
+    <Head>
+      <title>JH Lab</title>
+    </Head>
     <Header />
-    {props.children}
-    <Footer/>
+    <div style={layoutStyle}>
+      {props.children}
+    </div>
+    <Footer />
     <style jsx global>{`
       body {
         margin: 0;

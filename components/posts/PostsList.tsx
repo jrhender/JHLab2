@@ -4,7 +4,6 @@ import { fetchEntries } from './postsAPI'
 import { Entry } from 'contentful'
 
 const layoutStyle = {
-  margin: 20,
 };
 
 function PostsList() {
