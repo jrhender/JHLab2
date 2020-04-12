@@ -10,7 +10,7 @@ const layoutStyle = {
 };
 
 const Layout = props => (
-  <div>
+  <div style={{display: 'flex', minHeight: '100vh', flexDirection: 'column'}}>
     <Head>
       <title>JH Lab</title>
     </Head>
@@ -20,6 +20,7 @@ const Layout = props => (
       {props.children}
       </div>
     </div>
+    <div style={{flexGrow:1}}></div>
     <Footer />
     <style jsx global>{`
       body {
