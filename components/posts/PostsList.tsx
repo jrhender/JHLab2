@@ -14,7 +14,6 @@ function PostsList() {
     async function getPosts() {
       const allPosts = await fetchEntries()
       setPosts([...allPosts])
-      console.log(allPosts)
     }
     getPosts()
   }, [])
