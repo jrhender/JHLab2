@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return (
         <div className={styles.AppFooter}>
-            <a href="https://twitter.com/JohnRTHenderson" className={styles.twitterLogo}>
+            <a href="https://twitter.com/MrJohnHenderson" className={styles.twitterLogo}>
                 <img src='/Twitter_Logo_White_On_Blue.svg' alt='Twitter logo' />
             </a>
             <a href="https://www.linkedin.com/in/jhend/" className={styles.linkedinLogo}>
