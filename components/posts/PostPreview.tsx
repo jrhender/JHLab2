@@ -12,7 +12,7 @@ function PostPreview({ alt, date, image, imageAttribution, title, url }) {
       <Link href="/blog/[title]" as={`/blog/${title}`}>
         <a>
           <div className="container">
-            <div>
+            <div className="image">
               <img title={imageAttribution} alt={alt} src={image} />
             </div>
             <div className="text">
@@ -20,6 +20,9 @@ function PostPreview({ alt, date, image, imageAttribution, title, url }) {
               <h4>{date}</h4>
             </div>
             <style jsx>{`
+            .image {
+              margin: auto auto;
+            }
             .container {
               display: grid;
               grid-template-columns: 1fr 1fr;
