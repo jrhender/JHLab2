@@ -1,7 +1,6 @@
 .AppHeader {
   background-color: steelblue;
   color: white;
-  display: grid;
 }
 
 .AppHeader h1 {
@@ -9,9 +8,7 @@
 }
 
 .LogoAndName {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-self: self-start;
+  display: flex;
 }
 
 @media all and (max-width: 600px) {
