@@ -23,7 +23,8 @@ const Post = ({title}) => {
     postMarkup =
       <>
         <h1>{title}</h1>
-        <p>{post.fields.date}</p>
+        {/* <p>Created: {post.sys.createdAt.split('T')[0]}</p> */}
+        <p>Last updated: {post.sys.updatedAt.split('T')[0]}</p>
         <div>{documentToReactComponents(post.fields.body)}</div>
       </>
   }
