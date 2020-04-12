@@ -1,0 +1,24 @@
+.AppFooter {
+    background-color: steelblue;
+    height: 50px;
+    padding: 5px;
+    color: white;
+
+    /**
+     * Flexbox properties
+     */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.twitterLogo {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+}
+
+.linkedinLogo {
+    margin-left: 5px;
+    height: 28px;
+}

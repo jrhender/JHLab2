@@ -1,20 +1,17 @@
-import './../styles/Footer.css';
+import styles from './Footer.module.css';
 //import twitterLogo from './../images/Twitter_Logo_White_On_Image.svg';
-import twitterLogo from './../images/Twitter_Logo_White_On_Blue.svg';
-import linkedinLogo from './../images/In-2CRev-28px-R.png';
 
-const Footer = (props) => {
+const Footer = () => {
     return (
-        <div className="App-footer">
-            <p>Connect:</p>
-            <a href="https://twitter.com/JohnRTHenderson" className='twitter-logo'>
-                <img src={twitterLogo} />
+        <div className={styles.AppFooter}>
+            <a href="https://twitter.com/JohnRTHenderson" className={styles.twitterLogo}>
+                <img src='footer/Twitter_Logo_White_On_Blue.svg' alt='Twitter logo' />
             </a>
-            <a href="https://www.linkedin.com/in/jhend/" className='linkedin-logo'>
-                <img src={linkedinLogo} />
+            <a href="https://www.linkedin.com/in/jhend/" className={styles.linkedinLogo}>
+                <img src='footer/In-2CRev-28px-R.png' alt='LinkedIn logo'/>
             </a>
         </div>
     )
-}
+};
 
 export default Footer;
