@@ -16,6 +16,12 @@ const Footer = () => {
                     title='HackerRank / CC BY (https://creativecommons.org/licenses/by/4.0)'
                     alt='HackerRank logo'/>
             </a>
+            <a href="https://github.com/jrhender" className={styles.githubLogo}>
+                <img
+                    src='/GitHub-Mark-Light-32px.png'
+                    title='GitHub (https://github.com/logos)'
+                    alt='link to github profile'/>
+            </a>
         </div>
     )
 };
