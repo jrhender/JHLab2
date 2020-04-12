@@ -1,0 +1,38 @@
+.image {
+  margin: auto auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+}
+
+.container a {
+  border-bottom: none;
+}
+
+.container a:hover {
+  border-bottom: none;
+}
+
+.container .text {
+  padding: 5px;
+}
+
+.container h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.container h4 {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.container img {
+  width: auto;
+}
