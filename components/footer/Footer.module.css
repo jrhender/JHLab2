@@ -18,7 +18,14 @@
     margin-left: 5px;
 }
 
-.linkedinLogo {
-    margin-left: 5px;
-    height: 28px;
+.linkedinLogo img {
+    margin-left: 6px;
+    margin-top: 4px;
+    height: 29px;
+}
+
+.hackerRankLogo img {
+    margin-left: 0px;
+    margin-top: 3px;
+    height: 39px;
 }

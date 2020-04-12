@@ -10,6 +10,12 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/jhend/" className={styles.linkedinLogo}>
                 <img src='/In-2CRev-28px-R.png' alt='LinkedIn logo'/>
             </a>
+            <a href="https://www.hackerrank.com/JohnHenderson" className={styles.hackerRankLogo}>
+                <img
+                    src='https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png'
+                    title='HackerRank / CC BY (https://creativecommons.org/licenses/by/4.0)'
+                    alt='HackerRank logo'/>
+            </a>
         </div>
     )
 };
