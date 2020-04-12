@@ -6,7 +6,7 @@ const Header = () => (
   <div className={styles.AppHeader}>
       <Link href="/">
         <div className={styles.LogoAndName}>
-          <h1>JH Code Lab</h1>
+          <h1>JH Thought Lab</h1>
           <div>
             <Flask />
           </div>
