@@ -7,7 +7,8 @@ const layoutStyle = {
   border: '1px solid #DDD'
 };
 
-function PostPreview({ alt, date, image, imageAttribution, title, url }) {
+function PostPreview({ alt, lastUpdatedDate, date, image, imageAttribution, title, url }) {
+  console.log(lastUpdatedDate)
   return (
     <div style={layoutStyle}>
       <Link href="/blog/[title]" as={`/blog/${title}`}>
@@ -18,7 +19,8 @@ function PostPreview({ alt, date, image, imageAttribution, title, url }) {
             </div>
             <div className={styles.text}>
               <h2>{title}</h2>
-              <h4>{date}</h4>
+              {/* <h4>{date}</h4> */}
+              <h4>Last updated: {lastUpdatedDate.split('T')[0]}</h4>
             </div>
           </div>
         </a>

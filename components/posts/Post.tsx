@@ -4,8 +4,7 @@ import { Entry } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import styles from './Post.module.css'
 
-const Post = (props) => {
-  const title = props.title
+const Post = ({title}) => {
   const [post, setPost] = useState<Entry<any>>()
 
   useEffect(() => {
