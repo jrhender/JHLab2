@@ -4,6 +4,9 @@ import Footer from './footer/Footer';
 
 const layoutStyle = {
   margin: 20,
+  maxWidth: 700,
+  marginLeft: 'auto',
+  marginRight: 'auto'
 };
 
 const Layout = props => (
@@ -13,7 +16,9 @@ const Layout = props => (
     </Head>
     <Header />
     <div style={layoutStyle}>
+      <div style={{margin: '0 20px'}}>
       {props.children}
+      </div>
     </div>
     <Footer />
     <style jsx global>{`
