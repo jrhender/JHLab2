@@ -2,12 +2,7 @@ import { useEffect, useState } from 'react'
 import { fetchEntryByTitle } from '../../components/posts/postsAPI'
 import { Entry } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
-};
+import styles from './Post.module.css'
 
 const Post = (props) => {
   const title = props.title
@@ -16,7 +11,6 @@ const Post = (props) => {
   useEffect(() => {
     async function getPosts() {
       const post = await fetchEntryByTitle(title as string)
-      console.log(post)
       setPost(post)
     }
     getPosts()
@@ -27,7 +21,6 @@ const Post = (props) => {
     postMarkup = <p></p>
   }
   else {
-    console.log(title)
     postMarkup =
       <>
         <h1>{title}</h1>
@@ -37,7 +30,7 @@ const Post = (props) => {
   }
 
   return (
-    <div style={layoutStyle}>
+    <div className={styles.container}>
       {postMarkup}
     </div>
   )
