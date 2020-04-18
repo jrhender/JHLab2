@@ -5,6 +5,7 @@
 
 .AppHeader h1 {
   margin: 10px;
+  cursor: pointer;
 }
 
 .LogoAndName {
