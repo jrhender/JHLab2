@@ -33,5 +33,11 @@
 .githubLogo img {
     margin-left: 0px;
     margin-top: 3px;
-    height: 29px;
+    height: 28px;
+}
+
+.bitbucketLogo img {
+    margin-left: 0px;
+    margin-top: 3px;
+    height: 38px;
 }
