@@ -2,6 +2,10 @@
   margin: auto auto;
 }
 
+.image img {
+  height: 125px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
