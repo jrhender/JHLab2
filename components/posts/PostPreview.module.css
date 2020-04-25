@@ -4,6 +4,7 @@
 
 .image img {
   height: 125px;
+  max-width: 170px;
 }
 
 .container {
