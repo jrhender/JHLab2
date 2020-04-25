@@ -6,3 +6,7 @@
 .container h1 {
     margin-top: 0px;
 }
+
+.container .dates {
+    font-style: italic;
+}

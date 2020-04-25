@@ -8,8 +8,7 @@ const Post = (props) => {
   return (
     <div className={styles.container}>
         <h1>{post.fields.title}</h1>
-        {/* <p>Created: {post.sys.createdAt.split('T')[0]}</p> */}
-        <p>Last updated: {post.sys.updatedAt.split('T')[0]}</p>
+        <p className={styles.dates}>First published: {post.sys.createdAt.split('T')[0]}. Last updated: {post.sys.updatedAt.split('T')[0]}.</p>
         <div>{documentToReactComponents(post.fields.body)}</div>
     </div>
   )
