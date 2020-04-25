@@ -22,12 +22,13 @@
 
 .container .text {
   padding: 5px;
+  margin: auto 0;
 }
 
 .container h2 {
   color: black;
   font-size: 24px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .container h4 {
@@ -35,6 +36,8 @@
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
+  margin-bottom: 0;
+  white-space: pre-wrap;
 }
 
 .container img {

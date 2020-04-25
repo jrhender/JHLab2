@@ -7,7 +7,7 @@ const layoutStyle = {
   border: '1px solid #DDD'
 };
 
-function PostPreview({ alt, lastUpdatedDate, image, imageAttribution, title, url }) {
+function PostPreview({ alt, lastUpdatedDate, createdDate, image, imageAttribution, title, url }) {
   console.log(lastUpdatedDate)
   return (
     <div style={layoutStyle}>
@@ -19,6 +19,7 @@ function PostPreview({ alt, lastUpdatedDate, image, imageAttribution, title, url
             </div>
             <div className={styles.text}>
               <h2>{title}</h2>
+              <h4>First published: {createdDate.split('T')[0]}</h4>
               <h4>Last updated: {lastUpdatedDate.split('T')[0]}</h4>
             </div>
           </div>
