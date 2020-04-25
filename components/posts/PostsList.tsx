@@ -1,21 +1,11 @@
 import { useEffect, useState } from 'react'
 import PostPreview from './PostPreview'
-import { fetchEntries } from './postsAPI'
 import { Entry } from 'contentful'
 
 const layoutStyle = {
 };
 
-function PostsList() {
-  const [posts, setPosts] = useState([])
-
-  useEffect(() => {
-    async function getPosts() {
-      const allPosts = await fetchEntries()
-      setPosts([...allPosts])
-    }
-    getPosts()
-  }, [])
+const PostsList = (props) => {
 
   let lastUpdatedSort = (a: Entry<any>, b: Entry<any>) => {
     return a.sys.updatedAt <= b.sys.updatedAt ? 1 : -1
@@ -24,8 +14,8 @@ function PostsList() {
   return (
     <div style={layoutStyle}>
       <h2>Recent Blog Posts</h2>
-      {posts.length > 0
-        ? posts.sort(lastUpdatedSort).map(p => (
+      {props.posts != null && props.posts.length > 0
+        ? props.posts.sort(lastUpdatedSort).map(p => (
             <PostPreview
               alt={p.fields.alt}
               lastUpdatedDate={p.sys.updatedAt}
