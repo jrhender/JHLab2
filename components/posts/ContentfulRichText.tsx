@@ -7,7 +7,6 @@ const richTextOptions = {
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const { title, description, file } = node.data.target.fields;
-      console.log(node);
       const mimeType = file.contentType
       const mimeGroup = mimeType.split('/')[0]
 

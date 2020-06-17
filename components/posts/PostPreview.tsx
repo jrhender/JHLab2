@@ -8,7 +8,6 @@ const layoutStyle = {
 };
 
 function PostPreview({ alt, lastUpdatedDate, createdDate, image, imageAttribution, title, url }) {
-  console.log(lastUpdatedDate)
   return (
     <div style={layoutStyle}>
       <Link href="/blog/[title]" as={`/blog/${title}`}>
