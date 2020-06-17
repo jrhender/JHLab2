@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react'
-import { Entry } from 'contentful'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import contentfulRichText from './ContentfulRichText'
 import styles from './Post.module.css'
 
 const Post = (props) => {
@@ -9,7 +7,7 @@ const Post = (props) => {
     <div className={styles.container}>
         <h1>{post.fields.title}</h1>
         <p className={styles.dates}>First published: {post.sys.createdAt.split('T')[0]}. Last updated: {post.sys.updatedAt.split('T')[0]}.</p>
-        <div>{documentToReactComponents(post.fields.body)}</div>
+        <div>{contentfulRichText(post.fields.body)}</div>
     </div>
   )
 }
