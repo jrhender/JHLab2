@@ -10,10 +10,11 @@ const layoutStyle = {
 };
 
 const Layout = props => (
-  <div style={{display: 'flex', minHeight: '100vh', flexDirection: 'column'}}>
+  <div style={{display: 'flex', minHeight: '100vh', flexDirection: 'column', fontFamily: 'Raleway'}}>
     <Head>
       <title>JH Lab</title>
       <link rel="shortcut icon" href="/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"></link>
     </Head>
     <Header />
     <div style={layoutStyle}>
