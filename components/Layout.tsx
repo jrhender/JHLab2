@@ -13,6 +13,7 @@ const Layout = props => (
   <div style={{display: 'flex', minHeight: '100vh', flexDirection: 'column'}}>
     <Head>
       <title>JH Lab</title>
+      <link rel="shortcut icon" href="/favicon.ico" />
     </Head>
     <Header />
     <div style={layoutStyle}>
