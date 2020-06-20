@@ -7,7 +7,6 @@ import styles from './Post.module.css'
 const richTextOptions = {
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
-      console.log(node);
       const { title, description, file } = node.data.target.fields;
       const mimeType = file.contentType
       const mimeGroup = mimeType.split('/')[0]
