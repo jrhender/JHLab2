@@ -3,41 +3,4 @@
     height: 50px;
     padding: 5px;
     color: white;
-
-    /**
-     * Flexbox properties
-     */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.twitterLogo {
-    width: 28px;
-    height: 28px;
-    margin-left: 5px;
-}
-
-.linkedinLogo img {
-    margin-left: 6px;
-    margin-top: 4px;
-    height: 29px;
-}
-
-.hackerRankLogo img {
-    margin-left: 0px;
-    margin-top: 3px;
-    height: 39px;
-}
-
-.githubLogo img {
-    margin-left: 0px;
-    margin-top: 3px;
-    height: 28px;
-}
-
-.bitbucketLogo img {
-    margin-left: 0px;
-    margin-top: 3px;
-    height: 38px;
 }
