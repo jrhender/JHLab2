@@ -2,5 +2,9 @@
     background-color: beige;
     height: 50px;
     padding: 5px;
-    color: white;
+    color: black;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
